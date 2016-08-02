@@ -4,13 +4,16 @@
 	<title>Autofill by Jabrayil Alizada</title>
 	<link rel="stylesheet" type="text/css" href="index.css">
 	<meta charset="utf-8">
+	<script src="js/fill.js"></script>
+
 </head>
 <body>
 <div class="main">
 
-	<div class="parent"> Test &darr;</div>
+	<div class="parent" onclick="show()"> Test &darr;</div>
 	<div class="clr"></div>
 	<div id="popup" class="popup">
+		<a id="exit" href="#" onclick="hide()">X</a>
 		<p> Выберите свой населенный пункт</p>
 		<ul>
 			<li><a id="baku" href="#">Баку</a></li>
@@ -19,7 +22,7 @@
 		</ul>
 		<p> Или выберите другой</p>
 		<form>
-			<input type="text" name="search">
+			<input type="text" name="search" onchange="autofill()">
 		</form>
 	</div>
 
