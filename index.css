@@ -1,6 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 
 .main {
@@ -49,4 +50,21 @@ input[type=text] {
 	text-decoration: none;
 	float: right;
 	color: black;
+}
+
+.dropdown ul {
+	width: 400px;
+	max-height: 400px;
+	margin: 0;
+	border: 1px solid #e5e7ec;
+}
+
+.dropdown ul li {
+	width: 400px;
+	padding: 5px;
+}
+
+.dropdown ul li:hover {
+	width: 400px;
+	background: #e5e7ec;
 }

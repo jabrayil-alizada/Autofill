@@ -16,8 +16,33 @@ function hide() {
 	flag = true;
 }
 
+let testAr = ['Бейлаган','Бронкс','Балакен','Баку'];
+let testArStr = testAr.toString();
+
 function autofill() {
 
-}
+	let str = "<ul>";
+	
+	let inputed = document.getElementById("autofillinput").value.toLowerCase();
+	
+	let inputedLength = inputed.length;
 
-let testAr = ['Бейлаган','Бронкс','Балакен','Баку'];
+	for(let i = 0; i < testAr.length ; i++){
+		let fromAr = testAr[i].substr(0,inputedLength).toLowerCase();
+
+		if (fromAr == inputed)
+		{
+			str += "<li id='data" + i + "' >" + testAr[i] + "</li>";
+		}
+	}
+
+	str += "<ul>";
+
+	document.getElementById("dropdown").innerHTML = str;
+
+	
+	if (document.getElementById("autofillinput").value == '') {
+		document.getElementById("dropdown").innerHTML = '';
+	}
+
+}

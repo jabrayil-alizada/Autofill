@@ -22,8 +22,9 @@
 		</ul>
 		<p> Или выберите другой</p>
 		<form>
-			<input type="text" name="search" onchange="autofill()">
+			<input id="autofillinput" type="text" name="search" oninput="autofill()">
 		</form>
+		<div id="dropdown" class="dropdown"></div>
 	</div>
 
 </div>
