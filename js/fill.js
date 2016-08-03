@@ -32,17 +32,24 @@ function autofill() {
 
 		if (fromAr == inputed)
 		{
-			str += "<li id='data" + i + "' >" + testAr[i] + "</li>";
+			str += "<li id='data" + i + "' class='data' onclick='selected(this)' >" + testAr[i] + "</li>";
 		}
+
 	}
 
 	str += "<ul>";
 
 	document.getElementById("dropdown").innerHTML = str;
 
-	
 	if (document.getElementById("autofillinput").value == '') {
 		document.getElementById("dropdown").innerHTML = '';
 	}
 
 }
+
+function selected(obj){
+	document.getElementById("parent").innerHTML = obj.innerHTML + " &darr;";
+}
+
+
+

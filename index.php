@@ -10,7 +10,7 @@
 <body>
 <div class="main">
 
-	<div class="parent" onclick="show()"> Test &darr;</div>
+	<div id="parent" class="parent" onclick="show()"> Test &darr;</div>
 	<div class="clr"></div>
 	<div id="popup" class="popup">
 		<a id="exit" href="#" onclick="hide()">X</a>

@@ -68,3 +68,7 @@ input[type=text] {
 	width: 400px;
 	background: #e5e7ec;
 }
+
+.data:hover {
+	cursor: pointer;
+}
